@@ -2,6 +2,7 @@
  * see https://dev.simtech-ag.ch/education/java/jegl/resources/meteo/classic
  * author: Daniel Schmutz
  * copyright: Simtech AG (https://www.simtech-ag.ch)
+ hello
  */
 
 package ch.std.jegl.meteo.classic;
@@ -28,7 +29,7 @@ public class MeteoClassic {
 		System.out.println("max = " + max);
 		System.out.printf("med = %.2f\n", med);
 		if (max >= 35.0) {
-			System.out.println("Wüstentag");
+			System.out.println("WÃ¼stentag");
 		}
 		if (max >= 30.0 && max < 35.0) {
 			System.out.println("Heisser Tag");
