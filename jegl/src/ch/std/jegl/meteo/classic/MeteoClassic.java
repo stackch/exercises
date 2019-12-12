@@ -2,7 +2,6 @@
  * see https://dev.simtech-ag.ch/education/java/jegl/resources/meteo/classic
  * author: Daniel Schmutz
  * copyright: Simtech AG (https://www.simtech-ag.ch)
- hello
  */
 
 package ch.std.jegl.meteo.classic;
