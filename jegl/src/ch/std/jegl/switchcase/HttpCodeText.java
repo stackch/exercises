@@ -1,5 +1,5 @@
 /*
- * see https://simtech-ag.ch/education/java/jegl/resources/basic/switch
+ * see https://www.simtech-ag.ch/education/java/jegl/resources/basic/switch
  * author: Daniel Schmutz
  * copyright: Simtech AG (https://www.simtech-ag.ch)
  */

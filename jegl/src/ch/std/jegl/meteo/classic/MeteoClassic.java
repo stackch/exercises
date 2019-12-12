@@ -1,5 +1,5 @@
 /*
- * see https://dev.simtech-ag.ch/education/java/jegl/resources/meteo/classic
+ * see https://www.simtech-ag.ch/education/java/jegl/resources/meteo/classic
  * author: Daniel Schmutz
  * copyright: Simtech AG (https://www.simtech-ag.ch)
  */

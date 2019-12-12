@@ -1,5 +1,5 @@
 /*
- * see https://dev.simtech-ag.ch/education/java/jegl/resources/meteo/oop
+ * see https://www.simtech-ag.ch/education/java/jegl/resources/meteo/oop
  * author: Daniel Schmutz
  * copyright: Simtech AG (https://www.simtech-ag.ch)
  */
