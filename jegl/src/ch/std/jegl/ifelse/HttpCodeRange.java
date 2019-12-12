@@ -1,5 +1,7 @@
 /*
  * see https://www.simtech-ag.ch/education/java/jegl/resources/basic/ifelse
+ * author: Daniel Schmutz
+ * copyright: Simtech AG (https://www.simtech-ag.ch)
  */
 
 package ch.std.jegl.ifelse;
