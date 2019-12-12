@@ -3,6 +3,7 @@
  * author: Daniel Schmutz
  * copyright: Simtech AG (https://www.simtech-ag.ch)
 */
+
 package ch.std.jegl.arraycopy;
 
 import java.util.Arrays;
