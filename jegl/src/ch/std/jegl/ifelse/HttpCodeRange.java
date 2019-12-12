@@ -1,6 +1,7 @@
 /*
  * see https://www.simtech-ag.ch/education/java/jegl/resources/basic/ifelse
  */
+
 package ch.std.jegl.ifelse;
 
 public class HttpCodeRange {
