@@ -1,5 +1,5 @@
 /*
- * see https://dev.simtech-ag.ch/education/java/jegl/resources/oo/accountrate
+ * see https://www.simtech-ag.ch/education/java/jegl/resources/oo/accountrate
  * author: Daniel Schmutz
  * copyright: Simtech AG (https://www.simtech-ag.ch)
 */
