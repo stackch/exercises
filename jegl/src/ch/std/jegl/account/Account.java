@@ -1,5 +1,5 @@
 /*
- * see https://www.simtech-ag.ch/education/java/jegl/resources/oo/accountrate
+ * see https://www.simtech-ag.ch/education/java/jegl/resources/oo/accountexception
  * author: Daniel Schmutz
  * copyright: Simtech AG (https://www.simtech-ag.ch)
 */
@@ -27,6 +27,33 @@ public class Account {
 	public Account(String nr, double saldo) {
 		this.nr = nr;
 		this.saldo = saldo;
+	}
+
+	/**
+	 * deposit given amount
+	 * @param amount
+	 * @throws AccountException
+	 */
+	public void deposit(double amount) throws AccountException {
+		if (amount < 0.0) {
+			throw new AccountException("negative amount");
+		}
+		this.saldo += amount;
+	}
+
+	/**
+	 * withdraw given amount
+	 * @param amount
+	 * @throws AccountException
+	 */
+	public void withdraw(double amount) throws AccountException {
+		if (amount < 0.0) {
+			throw new AccountException("negative amount");
+		}
+		if (this.saldo < amount) {
+			throw new AccountException("not enough saldo");		
+		}
+		this.saldo -= amount;
 	}
 
 	// getter / setter
