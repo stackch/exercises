@@ -9,7 +9,7 @@ package ch.std.jegl.shape;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public abstract class Shape {
+public abstract class Shape implements IShape {
 	protected int x;
 	protected int y;
 	protected int width;
@@ -37,8 +37,10 @@ public abstract class Shape {
 		this.fill = false;
 	}
 
+	@Override
 	public abstract void draw(Graphics g);
 
+	@Override
 	public double getArea() {
 		return 0.0;
 	}

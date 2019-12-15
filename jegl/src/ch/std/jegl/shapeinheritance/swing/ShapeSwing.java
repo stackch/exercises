@@ -4,18 +4,17 @@
  * copyright: Simtech AG (https://www.simtech-ag.ch)
  */
 
-package ch.std.jegl.shape.swing;
+package ch.std.jegl.shapeinheritance.swing;
 
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
-import java.util.ArrayList;
-import java.util.List;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
+import ch.std.jegl.shape.IShape;
 import ch.std.jegl.shape.Oval;
 import ch.std.jegl.shape.Rectangle;
 import ch.std.jegl.shape.Shape;
@@ -23,32 +22,24 @@ import ch.std.jegl.shape.Shape;
 public class ShapeSwing extends JPanel {
 
 	private int counter = 0;
-	private List<Shape> shapeList;
-
-	public ShapeSwing() {
-		this.setBackground(Color.BLUE);
-		this.shapeList = new ArrayList<>();
-		// paint rectangle
-		Shape r1 = new Rectangle(20, 20, 100, 200, Color.RED);
-		this.shapeList.add(r1);
-		Shape r2 = new Rectangle(140, 120, 200, 100, Color.YELLOW);
-		r2.setFill(true);
-		this.shapeList.add(r2);
-		// paint 2 Oval instance
-		Shape o1 = new Oval(140, 40, 160, 80, Color.GREEN);
-		this.shapeList.add(o1);
-		Shape o2 = new Oval(240, 250, 50, 50, Color.WHITE);
-		o2.setFill(true);
-		this.shapeList.add(o2);
-	}
 
 	@Override
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		System.out.println("paintComponent called " + ++counter);
-		for (Shape shape : shapeList) {
-			shape.draw(g);
-		}
+		this.setBackground(Color.BLUE);
+		// paint rectangle
+		IShape r1 = new Rectangle(20, 20, 100, 200, Color.RED);
+		r1.draw(g);
+		Shape r2 = new Rectangle(140, 120, 200, 100, Color.YELLOW);
+		r2.setFill(true);
+		r2.draw(g);
+		// paint 2 Oval instance
+		IShape o1 = new Oval(140, 40, 160, 80, Color.GREEN);
+		o1.draw(g);
+		Shape o2 = new Oval(240, 250, 50, 50, Color.WHITE);
+		o2.setFill(true);
+		o2.draw(g);
 	}
 
 	@Override
