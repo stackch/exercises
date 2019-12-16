@@ -42,7 +42,7 @@ public class Meteo implements IMeteo {
 
 	@Override
 	public boolean isSommertag() {
-		return this.getMax() >= 25.0 && !this.isHeisserTag();
+		return this.getMax() >= 25.0 && !this.isHeisserTag() && !this.isWuestenTag();
 	}
 
 	@Override

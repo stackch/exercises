@@ -13,7 +13,7 @@ public class Meteo {
 	private double med;
 
 	// constructor
-	public Meteo(double[] ta) {
+	public Meteo(double... ta) {
 		init(ta);
 	}
 
@@ -38,7 +38,7 @@ public class Meteo {
 	}
 
 	public boolean isSommertag() {
-		return this.max >= 25.0 && !this.isHeisserTag();
+		return this.max >= 25.0 && !this.isHeisserTag() && !this.isWuestenTag();
 	}
 
 	public boolean isTropennacht() {
