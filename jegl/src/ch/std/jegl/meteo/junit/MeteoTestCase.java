@@ -4,7 +4,7 @@
  * copyright: Simtech AG (https://www.simtech-ag.ch)
  */
 
-package ch.std.jegl.meteo.oop.junit;
+package ch.std.jegl.meteo.junit;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
