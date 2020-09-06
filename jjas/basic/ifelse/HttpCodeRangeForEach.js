@@ -4,30 +4,29 @@
  * copyright: Simtech AG (https://www.simtech-ag.ch)
 */
 
-console.log('Start HttpCodeRange ...');
+console.log('Start HttpCodeRangeForEach ...');
 
 let httpCodes = [100, 200, 300, 404, 500, 600, -1];
 
-for (let i = 0; i < httpCodes.length; i++) {
-    const httpCode = httpCodes[i];
+httpCodes.forEach(httpCode =>  {
     console.log("httpCode = ", httpCode);
     if (httpCode < 200 || httpCode >= 600) {
         console.log("httpCode ", httpCode, " is out of range");
-        continue;
+        return;
     }
     if (httpCode >= 200 && httpCode < 300) {
         console.log("httpCode ", httpCode, " successful");
-        continue;
+        return;
     }
     if (httpCode >= 300 && httpCode < 400) {
         console.log("httpCode ", httpCode, " redirection");
-        continue;
+        return;
     }
     if (httpCode >= 400 && httpCode < 500) {
         console.log("httpCode ", httpCode, " client error");
-        continue;
+        return;
     }
     console.log("httpCode ", httpCode, " server error");
-}
+});
 
-console.log('... HttpCodeRange Done');
+console.log('... HttpCodeRangeForEach Done');

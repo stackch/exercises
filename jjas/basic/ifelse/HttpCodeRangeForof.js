@@ -4,12 +4,11 @@
  * copyright: Simtech AG (https://www.simtech-ag.ch)
 */
 
-console.log('Start HttpCodeRange ...');
+console.log('Start HttpCodeRangeForof ...');
 
 let httpCodes = [100, 200, 300, 404, 500, 600, -1];
 
-for (let i = 0; i < httpCodes.length; i++) {
-    const httpCode = httpCodes[i];
+for (const httpCode of httpCodes) { // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
     console.log("httpCode = ", httpCode);
     if (httpCode < 200 || httpCode >= 600) {
         console.log("httpCode ", httpCode, " is out of range");
@@ -28,6 +27,6 @@ for (let i = 0; i < httpCodes.length; i++) {
         continue;
     }
     console.log("httpCode ", httpCode, " server error");
-}
+};
 
-console.log('... HttpCodeRange Done');
+console.log('... HttpCodeRangeForof Done');
