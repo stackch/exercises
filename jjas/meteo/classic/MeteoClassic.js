@@ -1,3 +1,10 @@
+/*
+ * see https://www.simtech-ag.ch/education/internet/jjas/resources/meteo/classic
+ * author: Daniel Schmutz
+ * copyright: Simtech AG (https://www.simtech-ag.ch)
+*/
+
+
 console.log('Start...');
 
 function MeteoClassic() {
