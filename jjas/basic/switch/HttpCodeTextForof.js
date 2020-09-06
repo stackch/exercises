@@ -4,12 +4,11 @@
  * copyright: Simtech AG (https://www.simtech-ag.ch)
 */
 
-console.log('Start HttpCodeText ...');
+console.log('Start HttpCodeTextForof ...');
 
 let httpCodes = [100, 200, 300, 404, 500, 600, -1];
 
-for (let i = 0; i < httpCodes.length; i++) {
-    const httpCode = httpCodes[i];
+for (const httpCode of httpCodes) { // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
     switch (httpCode) {
         case 100:
             console.log(httpCode + " = Continue");
@@ -125,4 +124,4 @@ for (let i = 0; i < httpCodes.length; i++) {
         }
 }
 
-console.log('... HttpCodeText Done');
+console.log('... HttpCodeTextForof Done');

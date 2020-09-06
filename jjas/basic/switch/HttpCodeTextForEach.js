@@ -4,12 +4,11 @@
  * copyright: Simtech AG (https://www.simtech-ag.ch)
 */
 
-console.log('Start HttpCodeText ...');
+console.log('Start HttpCodeTextForEach ...');
 
 let httpCodes = [100, 200, 300, 404, 500, 600, -1];
 
-for (let i = 0; i < httpCodes.length; i++) {
-    const httpCode = httpCodes[i];
+httpCodes.forEach(httpCode =>  {
     switch (httpCode) {
         case 100:
             console.log(httpCode + " = Continue");
@@ -122,7 +121,7 @@ for (let i = 0; i < httpCodes.length; i++) {
         default:
             console.log(httpCode + " = Out of Scope");
             break;
-        }
-}
+    }
+});
 
-console.log('... HttpCodeText Done');
+console.log('... HttpCodeTextForEach Done');
