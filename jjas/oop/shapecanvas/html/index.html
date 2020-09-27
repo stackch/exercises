@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rectangle Canvas Method</title>
+        <script src="Shape.js"></script>
+        <script src="Rectangle.js"></script>
+        <script src="Oval.js"></script>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="400" height="400" style="background: #0000ff;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+        <script>
+            let myCanvas = document.getElementById('myCanvas');
+            let r1 = new Rectangle(20, 20, 100, 200, '#FF0000');
+            r1.draw(myCanvas);
+            let r2 = new Rectangle(140, 120, 200, 100, '#FFFF00', true);
+            r2.draw(myCanvas);
+            let o1 = new Oval(220, 70, 100, 50, '#FFFFFF');
+            o1.draw(myCanvas);
+            let o2 = new Oval(200, 300, 50, 100, '#FF00FF', true);
+            o2.draw(myCanvas);
+        </script>
+    </body>        
+</html>

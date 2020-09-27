@@ -4,7 +4,6 @@
  * copyright: Simtech AG (https://www.simtech-ag.ch)
 */
 
-
 console.log('Start...');
 
 function MeteoClassic() {

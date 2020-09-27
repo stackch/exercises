@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shape Poly Canvas</title>
+        <script src="Shape.js"></script>
+        <script src="Rectangle.js"></script>
+        <script src="Oval.js"></script>
+        <script>
+            let shapes = [];
+            function initShapes() {
+                let r1 = new Rectangle(20, 20, 100, 200, '#FF0000');
+                shapes.push(r1);
+                let r2 = new Rectangle(140, 120, 200, 100, '#FFFF00', true);
+                shapes.push(r2);
+                let o1 = new Oval(220, 70, 100, 50, '#FFFFFF');
+                shapes.push(o1);
+                let o2 = new Oval(200, 300, 50, 100, '#FF00FF', true);
+                shapes.push(o2);
+            }
+            function drawShapes(canvas) {
+                for (const shape of shapes) {
+                    shape.draw(canvas);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="400" height="400" style="background: #0000ff;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+        <script>
+            let myCanvas = document.getElementById('myCanvas');
+            initShapes();
+            drawShapes(myCanvas);
+        </script>
+    </body>        
+</html>

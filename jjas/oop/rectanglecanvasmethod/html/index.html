@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rectangle Canvas Method</title>
+        <script src="Rectangle.js"></script>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="400" height="400" style="background: #0000ff;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+        <script>
+            let myCanvas = document.getElementById('myCanvas');
+            let r1 = new Rectangle(20, 20, 100, 200, '#FF0000');
+            r1.draw(myCanvas);
+            let r2 = new Rectangle(140, 120, 200, 100, '#FFFF00', true);
+            r2.draw(myCanvas);
+        </script>
+    </body>        
+</html>

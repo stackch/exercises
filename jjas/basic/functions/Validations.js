@@ -1,9 +1,3 @@
-/*
- * see https://www.simtech-ag.ch/education/internet/jjas/resources/basic/functions
- * author: Daniel Schmutz
- * copyright: Simtech AG (https://www.simtech-ag.ch)
-*/
-
 console.log('Start Functions Validations ...');
 
 var validations = {

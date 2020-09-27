@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rectangle Canvas</title>
+        <script src="Rectangle.js"></script>
+    </head>
+    <body>
+        <canvas id="myCanvas" width="400" height="400" style="background: #0000ff;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+        <script>
+            let r1 = new Rectangle(20, 20, 100, 200);
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.strokeStyle = "#FF0000";
+            ctx.beginPath();
+            ctx.rect(r1.x, r1.y, r1.width, r1.height);
+            ctx.stroke();
+            let r2 = new Rectangle(140, 120, 200, 100);
+            ctx.fillStyle = "#FFFF00";
+            ctx.fillRect(r2.x, r2.y, r2.width, r2.height);
+        </script>
+    </body>        
+</html>
