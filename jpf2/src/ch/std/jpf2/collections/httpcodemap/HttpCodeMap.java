@@ -1,10 +1,10 @@
 /*
- * see https://www.simtech-ag.ch/education/java/jpf2/resources/collections/hascodehmap
+ * see https://www.simtech-ag.ch/education/java/jpf2/resources/collections/httpcodemap
  * author: Daniel Schmutz
  * copyright: Simtech AG (https://www.simtech-ag.ch)
  */
 
-package ch.std.jpf2.collections.hashmap;
+package ch.std.jpf2.collections.httpcodemap;
 
 import java.util.HashMap;
 import java.util.Map;
