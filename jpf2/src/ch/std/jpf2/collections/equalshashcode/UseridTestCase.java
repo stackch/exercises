@@ -1,3 +1,9 @@
+/*
+ * see https://www.simtech-ag.ch/education/java/jpf2/resources/collections/equalsandhashcode
+ * author: Daniel Schmutz
+ * copyright: Simtech AG (https://www.simtech-ag.ch)
+ */
+
 package ch.std.jpf2.collections.equalshashcode;
 
 import java.util.HashSet;
