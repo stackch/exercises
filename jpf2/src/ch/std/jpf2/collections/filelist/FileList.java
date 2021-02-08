@@ -7,6 +7,7 @@
 package ch.std.jpf2.collections.filelist;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -17,14 +18,21 @@ public class FileList {
 			System.out.println("no args");
 			return;
 		}
-		List<String> fileList = load(args[0]);
-		for (String fileName : fileList) {
-			System.out.println(fileName);
+		try {
+			List<String> fileList = load(args[0]);
+			for (String fileName : fileList) {
+				System.out.println(fileName);
+			}
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
 		}
 	}
 
-	public static List<String> load(String path) {
+	public static List<String> load(String path) throws IOException {
 		File dir = new File(path);
+		if (!dir.exists()) {
+			throw new IOException("path does not exist");
+		}
 		String[] fileNames = dir.list();
 		List<String> list = Arrays.asList(fileNames);
 		return list;
