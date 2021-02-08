@@ -6,9 +6,9 @@
 
 package ch.std.jpf2.collections.httpcodemap;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.TreeMap;
 
 public class HttpCodeTreeMap {
 
@@ -19,7 +19,7 @@ public class HttpCodeTreeMap {
 		}
 		try {
 			// create hashtable and init them
-			Map<Integer,String> httpCodeTable = new HashMap<Integer,String>();
+			Map<Integer,String> httpCodeTable = new TreeMap<Integer,String>();
 			httpCodeTable.put(200, "OK");
 			httpCodeTable.put(201, "Created");
 			httpCodeTable.put(202, "Accepted");
@@ -60,10 +60,15 @@ public class HttpCodeTreeMap {
 			String text = httpCodeTable.get(httpCode);
 			System.out.println("" + httpCode + ": " + text);
 			
-			// traverse all keys using for each
+			// traverse all entries using for each
 			for (Entry<Integer, String> httpCodeEntry : httpCodeTable.entrySet()) {
 				System.out.println(httpCodeEntry);
 			}
+
+			// traverse all entries using for lambda
+			httpCodeTable.forEach((key, value) -> {
+				System.out.println(key  + "=" + value);			
+			});
 
 		} catch (Exception e) {
 			System.out.println(e);
