@@ -11,6 +11,16 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
+class FileListException extends Exception {
+
+	private static final long serialVersionUID = 8883250486347621793L;
+
+	public FileListException(String msg) {
+		super(msg);
+	}
+	
+}
+
 public class FileList {
 
 	public static void main(String[] args) {
@@ -28,10 +38,10 @@ public class FileList {
 		}
 	}
 
-	public static List<String> load(String path) throws IOException {
+	public static List<String> load(String path) throws FileListException {
 		File dir = new File(path);
 		if (!dir.exists()) {
-			throw new IOException("path does not exist");
+			throw new FileListException("path does not exist");
 		}
 		String[] fileNames = dir.list();
 		List<String> list = Arrays.asList(fileNames);
