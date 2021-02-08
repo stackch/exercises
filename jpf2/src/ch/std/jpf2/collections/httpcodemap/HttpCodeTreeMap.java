@@ -8,8 +8,9 @@ package ch.std.jpf2.collections.httpcodemap;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 
-public class HttpCodeMap {
+public class HttpCodeTreeMap {
 
 	public static void main(String[] args) {
 		if (args.length < 1) {
@@ -58,6 +59,12 @@ public class HttpCodeMap {
 			int httpCode = Integer.parseInt(args[0]);
 			String text = httpCodeTable.get(httpCode);
 			System.out.println("" + httpCode + ": " + text);
+			
+			// traverse all keys using for each
+			for (Entry<Integer, String> httpCodeEntry : httpCodeTable.entrySet()) {
+				System.out.println(httpCodeEntry);
+			}
+
 		} catch (Exception e) {
 			System.out.println(e);
 		}
