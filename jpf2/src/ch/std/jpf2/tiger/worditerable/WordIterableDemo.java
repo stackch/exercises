@@ -10,7 +10,7 @@ public class WordIterableDemo {
 	public static void main(String args[]) {
 		String s = "Natürlicher Verstand kann fast jeden Grad von Bildung ersetzen, aber keine Bildung den natürlichen Verstand";
 
-		for (Object word : new WordIterable(s)) {
+		for (String word : new WordIterable(s)) {
 			System.out.println(word);
 		}
 	}

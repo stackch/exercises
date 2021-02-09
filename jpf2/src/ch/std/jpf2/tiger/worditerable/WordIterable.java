@@ -9,7 +9,7 @@ package ch.std.jpf2.tiger.worditerable;
 import java.util.Iterator;
 import java.util.StringTokenizer;
 
-class WordIterable implements Iterable, Iterator
+class WordIterable implements Iterable<String>, Iterator<String>
 {
   private StringTokenizer st;
 
@@ -20,7 +20,7 @@ class WordIterable implements Iterable, Iterator
 
   // Methode vom Iterable
 
-  public Iterator iterator()
+  public Iterator<String> iterator()
   {
     return this;
   }
@@ -32,7 +32,7 @@ class WordIterable implements Iterable, Iterator
     return st.hasMoreTokens();
   }
 
-  public Object next()
+  public String next()
   {
     return st.nextToken();
   }
