@@ -13,13 +13,19 @@ import ch.std.jdpp.abstractfactory.VehiclePlace;
 public class VehiclePlaceApp {
 	public static void main(String[] args) {
 		VehiclePlace vp = new VehiclePlace();
+		VehicleFactory vf = null;
+		if (args.length <= 0) {
+			vf = VehicleFactory.createFactory();
+		} else {
+			vf = VehicleFactory.createFactory(args[0]);
+		}
 
 		// init vehicle place
-		IVehicle car = VehicleFactory.instance("Car", 2);
+		IVehicle car = vf.instance("Car", 2);
 		vp.add(car);
-		IVehicle boat = VehicleFactory.instance("Boat", 5);
+		IVehicle boat = vf.instance("Boat", 5);
 		vp.add(boat);
-		IVehicle bike = VehicleFactory.instance("Bike", 10);
+		IVehicle bike = vf.instance("Bike", 10);
 		vp.add(bike);
 
 		// lets rent

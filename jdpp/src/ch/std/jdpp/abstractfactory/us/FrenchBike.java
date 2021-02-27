@@ -4,30 +4,28 @@
  * copyright: Simtech AG (https://www.simtech-ag.ch)
  */
 
-package ch.std.jdpp.abstractfactory;
+package ch.std.jdpp.abstractfactory.us;
 
-public class Car extends VehicleAdapter {
-	public Car() {
+import ch.std.jdpp.abstractfactory.Bike;
+import ch.std.jdpp.abstractfactory.IVehicle;
+
+public class FrenchBike extends Bike {
+	public FrenchBike() {
 		super();
 	}
 
 	@Override
-	public String getKey() {
-		return "Car";
-	}
-	
-	@Override
 	public IVehicle instance() {
-		return new Car();
+		return new FrenchBike();
 	}
 
 	@Override
 	public void startRentSteps() {
-		System.out.println("start renting a car");
+		System.out.println("start renting a french bike");
 	}
 
 	@Override
 	public void stopRentSteps() {
-		System.out.println("stop renting a car");
+		System.out.println("stop renting a french bike");
 	}
 }

@@ -11,14 +11,22 @@ public class Bike extends VehicleAdapter {
 		super();
 	}
 
+	@Override
+	public String getKey() {
+		return "Bike";
+	}
+
+	@Override
 	public IVehicle instance() {
 		return new Bike();
 	}
 
+	@Override
 	public void startRentSteps() {
 		System.out.println("start renting a bike");
 	}
 
+	@Override
 	public void stopRentSteps() {
 		System.out.println("stop renting a bike");
 	}

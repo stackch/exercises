@@ -7,6 +7,9 @@
 package ch.std.jdpp.abstractfactory;
 
 public interface IVehicle {
+	
+    public String  getKey();
+
 	public IVehicle instance();
 
 	public void startRent() throws VehicleException;

@@ -4,30 +4,29 @@
  * copyright: Simtech AG (https://www.simtech-ag.ch)
  */
 
-package ch.std.jdpp.abstractfactory;
+package ch.std.jdpp.abstractfactory.french;
 
-public class Boat extends VehicleAdapter {
-	public Boat() {
+import ch.std.jdpp.abstractfactory.Boat;
+import ch.std.jdpp.abstractfactory.IVehicle;
+
+public class USBoat extends Boat {
+	public USBoat() {
 		super();
 	}
 
-	@Override
-	public String getKey() {
-		return "Boat";
-	}
 
 	@Override
 	public IVehicle instance() {
-		return new Boat();
+		return new USBoat();
 	}
 
 	@Override
 	public void startRentSteps() {
-		System.out.println("start renting a boat");
+		System.out.println("start renting a us boat");
 	}
 
 	@Override
 	public void stopRentSteps() {
-		System.out.println("stop renting a boat");
+		System.out.println("stop renting a us boat");
 	}
 }
