@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="book.xsd">
+    <book>
+        <title>XSLT</title>
+        <author>Michael Kay</author>
+        <publisher>Wrox Press Ltd.</publisher>
+        <isbn>1-861003-12-9</isbn>
+    </book>
+    <book>        
+        <title>XML and Java</title>
+        <author>Hiroshi Maruyama</author>
+        <author>Kent Tamura</author>
+        <author>Naohiko Uramoto</author>
+        <publisher>Addison Wesley</publisher>
+        <isbn>0201485435</isbn>
+    </book>
+    <book>
+        <title>Java and XML</title>
+        <author>Brett McLaughlin</author>
+        <author>Mike Loukides</author>
+        <publisher>O'Reilly</publisher>
+        <isbn>0596000162</isbn>
+    </book>
+</document>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="https://www.simtech-ag.ch/education/xml/jexm bookns.xsd" 
+            xmlns:b="https://www.simtech-ag.ch/education/xml/jexm">
+    <b:book>
+        <b:title>XSLT</b:title>
+        <b:author>Michael Kay</b:author>
+        <b:publisher>Wrox Press Ltd.</b:publisher>
+        <b:isbn>1-861003-12-9</b:isbn>
+    </b:book>
+    <b:book>        
+        <b:title>XML and Java</b:title>
+        <b:author>Hiroshi Maruyama</b:author>
+        <b:author>Kent Tamura</b:author>
+        <b:author>Naohiko Uramoto</b:author>
+        <b:publisher>Addison Wesley</b:publisher>
+        <b:isbn>0201485435</b:isbn>
+    </b:book>
+    <b:book>
+        <b:title>Java and XML</b:title>
+        <b:author>Brett McLaughlin</b:author>
+        <b:author>Mike Loukides</b:author>
+        <b:publisher>O'Reilly</b:publisher>
+        <b:isbn>0596000162</b:isbn>
+    </b:book>
+</b:document>

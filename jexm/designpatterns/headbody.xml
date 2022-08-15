@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <head>
+        <meta name="creationTime" value="2022-06-06T10:01:44.156Z" />
+        <!-- place more meta data here -->
+    </head>
+    <body>
+        <booklist>
+            <book>
+                <title>XSLT</title>
+                <authorlist>
+                    <author>Michael Kay</author>
+                </authorlist>
+                <publisher>Wrox Press Ltd.</publisher>
+                <isbn>1-861003-12-9</isbn>
+            </book>
+            <book>
+                <title>XML and Java</title>
+                <authorlist>
+                    <author>Hiroshi Maruyama</author>
+                    <author>Kent Tamura</author>
+                    <author>Naohiko Uramoto</author>
+                </authorlist>
+                <publisher>Addison Wesley</publisher>
+                <isbn>0201485435</isbn>
+            </book>
+            <book>
+                <title>Java and XML</title>
+                <authorlist>
+                    <author>Brett McLaughlin</author>
+                    <author>Mike Loukides</author>
+                </authorlist>
+                <publisher>O'Reilly</publisher>
+                <isbn>0596000162</isbn>
+            </book>
+        </booklist>
+    </body>
+</document>

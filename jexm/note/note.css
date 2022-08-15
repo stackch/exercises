@@ -1,0 +1,32 @@
+document {
+    font-family: arial;
+    background: white;
+    color:black;
+    padding: 1em;
+ }
+
+ note {
+     display: block;
+     background: darkblue;
+     border: 1px solid white;
+     color: white;
+     line-height: 2em;
+     padding: 0.5em;
+ }
+
+ to, from {
+    display: block;
+ }
+
+ heading {
+    display: block;
+    font-weight: bold;
+ }
+
+ body {
+     background: silver;     
+     padding: 0.5em;
+ }
+
+
+ 

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="note.xsl" type="text/xsl" ?>
+<document>
+  <note>
+    <to>Jane</to>
+    <from>Tom</from>
+    <heading>Reminder</heading>
+    <body>Don't forget me this weekend!</body>
+  </note> 
+  <note>
+    <to>Tom</to>
+    <from>Jane</from>
+    <heading>Ack</heading>
+    <body>How could I?</body>
+  </note> 
+  <note>
+    <to>Jane</to>
+    <from>Tom</from>
+    <heading>Sorry</heading>
+    <body>I was somewhat too fearful!</body>
+  </note> 
+</document>
